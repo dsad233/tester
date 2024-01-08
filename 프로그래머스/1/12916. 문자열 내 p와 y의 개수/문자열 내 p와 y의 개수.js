@@ -1,13 +1,12 @@
 function solution(s){
     var answer = true;
     s = s.toUpperCase();
-    
-    let num = 0;
+    let sum = 0;
     for(let i = 0; i < s.length; i++){
-        if(s[i] === "P") num++;
-        if(s[i] === "Y") num--;
+        if(s[i] === "P" ) sum++;
+        if(s[i] === "Y") sum--;
     }
-    answer = num === 0;
+    answer = (sum === 0);
 
     return answer;
 }
