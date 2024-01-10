@@ -1,11 +1,10 @@
 function solution(n)
 {
     var answer = 0;
-    let sum = n.toString();
-    for(let i = 0; i < sum.length; i++){
-        answer += Number(sum[i]);
+    let su = n.toString();
+    for(let i = 0; i < su.length; i++){
+        answer += Number(su[i]);
     }
     
-
     return answer;
 }
