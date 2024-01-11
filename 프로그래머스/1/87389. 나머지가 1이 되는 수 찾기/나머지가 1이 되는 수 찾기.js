@@ -1,8 +1,8 @@
 function solution(n) {
-    var answer = 0;
-    for(answer; ; answer++){
-        if(n % answer === 1){
-            return answer;
+    for(let x = 0; ;x++){
+        if(n % x === 1){
+            return x;
         }
     }
+    
 }
