@@ -3,6 +3,5 @@ function solution(n) {
         if(n % x === 1){
             return x;
         }
-    }
-    
+    }  
 }
