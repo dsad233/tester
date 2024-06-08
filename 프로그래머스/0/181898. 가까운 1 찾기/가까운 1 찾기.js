@@ -1,7 +1,7 @@
 function solution(arr, idx) {
     var answer = 0;
     for(let i = 0; i < arr.length; i++){
-        if(arr[i] === 1 && i >= idx){
+        if( i >= idx && arr[i] === 1){
             answer = i;
             break;
         } else {
