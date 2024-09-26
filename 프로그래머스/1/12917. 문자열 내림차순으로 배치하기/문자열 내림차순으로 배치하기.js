@@ -1,18 +1,17 @@
 function solution(s) {
     var answer = '';
-    let split = s.split('');
-    let sort = split.sort((a, b) => b.localeCompare(a));
-    for(let i = 0; i < sort.length; i++){
-        if(sort[i].toLowerCase() === sort[i]){
-            answer += sort[i];
+    let upString = '';
+    const split = s.split('').sort((a, b) => b.localeCompare(a));
+    
+    for(let i = 0; i < split.length; i++){
+        if(split[i].toUpperCase() !== split[i]){
+            answer += split[i];
+        } else {
+            upString += split[i];
         }
     }
     
-    for(let j = 0; j < sort.length; j++){
-        if(sort[j].toUpperCase() === sort[j]){
-            answer += sort[j];
-        }
-    }
+    answer += upString;
     
     return answer;
 }
