@@ -1,5 +1,5 @@
 function solution(spell, dic) {
-    var answer = 0;
+    var answer = 2;
     const spellSort = spell.sort((a, b) => a.localeCompare(b)).join('');
     const newMap = dic.map((data) => data.split('').sort((a, b) => a.localeCompare(b)).join(''));
     
@@ -7,10 +7,6 @@ function solution(spell, dic) {
         if(spellSort === newMap[i]){
             answer = 1;
         }
-    }
-    
-    if(answer === 0){
-        answer = 2;
     }
     
     return answer;
