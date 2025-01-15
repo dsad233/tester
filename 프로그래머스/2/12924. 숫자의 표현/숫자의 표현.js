@@ -1,10 +1,10 @@
 function solution(n) {
     var answer = 0;
-    const bounry = n / 2 + 1;
+    const binary = n / 2 + 1;
     
-    for(let i = 1; i < bounry; i++){
+    for(let i = 1; i <= binary; i++){
         let totalCount = 0;
-        for(let j  = i; j < bounry; j++){
+        for(let j  = i; j < binary; j++){
             totalCount += j;
             
             if(totalCount > n){
@@ -16,5 +16,7 @@ function solution(n) {
         }
     }
     
-    return (n === 1) ? 1 : answer + 1;
+    answer = (n === 1) ? 1 : answer + 1;
+    
+    return answer;
 }
